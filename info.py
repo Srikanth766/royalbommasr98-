@@ -42,7 +42,7 @@ FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c
 # Admin, Channels & Users Configuration
 # ============================
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6224341518').split()] # Replace with the actual admin ID(s) to add
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003017138916').split()]  # Channel id for auto indexing (make sure bot is admin)
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003032870747').split()]  # Channel id for auto indexing (make sure bot is admin)
 
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002707962160'))  # Log channel id (make sure bot is admin)
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1003132281240'))  # Bin channel id (make sure bot is admin)
@@ -83,7 +83,7 @@ DATABASE_URI2 = environ.get('DATABASE_URI2', "")  # MongoDB URI for the second d
 # ============================
 # Movie Notification & Update Settings
 # ============================
-MOVIE_UPDATE_NOTIFICATION = bool(environ.get('MOVIE_UPDATE_NOTIFICATION', False))  # Notification On (True) / Off (False)
+MOVIE_UPDATE_NOTIFICATION = bool(environ.get('MOVIE_UPDATE_NOTIFICATION', True))  # Notification On (True) / Off (False)
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002596335440'))  # Notification of sent to your channel
 DREAMXBOTZ_IMAGE_FETCH = bool(environ.get('DREAMXBOTZ_IMAGE_FETCH', True))  # On (True) / Off (False)
 LINK_PREVIEW = bool(environ.get('LINK_PREVIEW', False)) # Shows link preview in notification msg instead of image
@@ -96,8 +96,8 @@ LANDSCAPE_POSTER = bool(environ.get('LANDSCAPE_POSTER', True)) # Shows landscape
 # Verification Settings
 # ============================
 IS_VERIFY = is_enabled('IS_VERIFY', False)  # Verification On (True) / Off (False)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-100')) #Verification Channel Id 
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1003148593022')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1003148593022')) #Verification Channel Id 
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002900291784')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/dreamxbotz")   # Tutorial link for verification
