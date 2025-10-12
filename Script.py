@@ -224,7 +224,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/+4gF8SUMNJDA4OTY1">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href="https://t.me/ROYALBOMMASR1">[ ROYALBOMMA ]</a></b>"""
+    CAPTION = """<b><a href="https://t.me/+4gF8SUMNJDA4OTY1">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href="https://t.me/ROYALBOMMASR1">[ ROYALBOMMASR1 ]</a></b>"""
 
     
     MOVIE_UPDATE_NOTIFY_TXT = """
